@@ -10,7 +10,7 @@ just resolve some questions
 - 下载python3.9.18
 - conda install python=3.9.18 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 
-![image-20250224091606413](C:\Users\lee\AppData\Roaming\Typora\typora-user-images\image-20250224091606413.png)
+![](https://github.com/louislee2/Study/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-24%20091016.png)
 
 - 打开pycharm配置解释器
 - 安装pytorch  pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --index-url https://download.pytorch.org/whl/cpu 一般来说问下ai就行了，看官方文档的是看gpu版本的是否兼容。（pyhtorch的兼容性比较好，这里可以直接用pip指令，但是tesnorflow一定要指定版本）
@@ -24,11 +24,11 @@ just resolve some questions
 
 - 你昨晚运行的seq2seq_main.py中的代码要进行改动，它默认的是**gpu**运行，改成**cpu**。
 
-![image-20250224095959164](C:\Users\lee\AppData\Roaming\Typora\typora-user-images\image-20250224095959164.png)
+![](https://github.com/louislee2/Study/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-24%20095759.png)
 
 运行结果为：
 
-![image-20250224100040448](C:\Users\lee\AppData\Roaming\Typora\typora-user-images\image-20250224100040448.png)
+![](https://github.com/louislee2/Study/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-24%20100031.png)
 
 - 红色的地方是我自己的原因（numpy下载了两次）对结果不影响。使用**crtl+c**终止训练。cpu训练有点慢。。。
 - 一定要注意它的代码部分，有些是默认gpu运行的，要改成cpu,一般代码都会有注释。
